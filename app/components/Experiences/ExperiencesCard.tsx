@@ -1,7 +1,8 @@
+'use-client'
 import React, { FC, useState, useEffect } from 'react';
 import Heading from '../Heading';
-import UAlberta from '../../gallery/icon-ualberta.svg';
-import './Experiences.css';
+import Image from 'next/image';
+import '../../../app/globals.css'
 
 export interface ExperienceCardProps {
   inverse?: boolean;
@@ -60,7 +61,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
 
   return (
     <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
-      <img src={UAlberta} alt="UAlberta icon" />
+      <Image src='/public/next.svg' alt='Icon'/>
       <div className={`${inverseCard} absolute rounded-[25px]`}>
         <Heading className="text-white font-extrabold" size="h3">
           {job}

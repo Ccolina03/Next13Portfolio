@@ -1,5 +1,5 @@
 
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard from './ExperiencesCard';
 import Heading from '../Heading';
 const Experiences = () => {
     return (
