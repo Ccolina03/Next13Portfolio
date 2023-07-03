@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+import { fontFamily } from "tailwindcss/defaultTheme";
 const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
@@ -21,6 +23,7 @@ module.exports = {
       blue: {
         500: "rgb(59 130 246)"
       },
+
       backgroundWork: '#0E1115',
       bannerColor: "rgba(130,224,249,1)",
       white: "rgba(255, 255, 255)",
@@ -46,6 +49,9 @@ module.exports = {
       },
       backgroundImage: {
         'header': "url('/src/gallery/Rectangle 9.png')"
+      },
+      fontFamily: {
+        gilroy: ["var(--font-gilroy)", ...fontFamily.sans],
       },
       flex: {
         '1/3': '1 1 33%',
