@@ -11,8 +11,9 @@ import {FaLaptopCode} from 'react-icons/fa'
 
 const Header = () => {
     return (
-        <header className="w-full mx-auto">
-            <div className="relative overflow-visible gap-x-8 flex-row flex">
+        <header className="w-full mx-auto relative overflow-visible s">
+            <div className="background h-96 w-full">
+            <div className="gap-x-8 flex-row flex">
                 <div className="my-auto mx-2">
                     <Image src={CCIcon} alt="Carlos Colina Icon" height={40} width={50}/>
                 </div>
@@ -38,6 +39,7 @@ const Header = () => {
             </div>
             <div className="text-white">
                 Button for something
+            </div>
             </div>
         </header>
     )
