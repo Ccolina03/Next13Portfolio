@@ -11,6 +11,7 @@ import {DiCodeigniter} from 'react-icons/di'
 import {FaLaptopCode} from 'react-icons/fa'
 import * as React from 'react'
 import '../../globals.css'
+import HeaderBg from "./HeaderBg";
 
 const getBackground = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
     switch (screenSize) {
@@ -70,7 +71,9 @@ const Header = () => {
                     <a className="my-auto "><SideBarIcon icon={<BsLinkedin size = "40"/>}/></a>
                 </div>
             </div>
+            
             <div className="carlos flex text-white">
+                 <HeaderBg/>
                 <div className="flex-col">
                     <div className="nombre">nombre</div>
                     <div className="subtitulo1">sub1</div>
@@ -83,6 +86,7 @@ const Header = () => {
                 Button for something
             </div>
             </div>
+            <HeaderBg/>
         </header>
     )
 }
