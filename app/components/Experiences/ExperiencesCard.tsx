@@ -1,8 +1,9 @@
 'use-client'
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC } from 'react';
 import Heading from '../Heading';
 import Image from 'next/image';
 import '../../../app/globals.css'
+import UAlberta from '../../../public/icon-ualberta.svg'
 
 export interface ExperienceCardProps {
   inverse?: boolean;
@@ -35,34 +36,10 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
   bullet2 = 'Front-end tasksfdsssssssssssssssssssssssssss',
   bullet3 = 'front-end more tasks to dofsdaaaaaaaaaaaaa',
 }) => {
-  const [screenSize, setScreenSize] = useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('lg');
-  const inverseCard = getInverse(inverse || false, screenSize);
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth >= 1280) {
-        setScreenSize('xl');
-      } else if (screenWidth >= 1024) {
-        setScreenSize('lg');
-      } else if (screenWidth >= 768) {
-        setScreenSize('md');
-      } else if (screenWidth >= 640) {
-        setScreenSize('sm');
-      } else {
-        setScreenSize('xs');
-      }
-    };
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
   return (
     <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
-      <Image src='/public/next.svg' alt='Icon'/>
-      <div className={`${inverseCard} absolute rounded-[25px]`}>
+     <Image src={UAlberta} width={50} height={65} alt='Icon' />
+      <div className={`job1 absolute rounded-[25px]`}>
         <Heading className="text-white font-extrabold" size="h3">
           {job}
         </Heading>
