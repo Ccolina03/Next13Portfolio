@@ -1,6 +1,6 @@
 "use client"
 import * as React from "react";
-import Heading from '../Heading';
+import Heading from '../shared/Heading';
 import Image from 'next/image';
 import '../../../app/globals.css'
 import UAlberta from '../../../public/icon-ualberta.svg'

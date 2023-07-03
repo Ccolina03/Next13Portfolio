@@ -1,6 +1,6 @@
 
 import ExperienceCard from './ExperiencesCard';
-import Heading from '../Heading';
+import Heading from '../shared/Heading';
 const Experiences = () => {
     return (
         <div className='flex flex-col items-center gap-16 md:items-center sm:items-end xs:items-end'>

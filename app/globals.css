@@ -26,7 +26,16 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Card CSS */
+.border-gradient {
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px, linear-gradient(to right, #74d69e, #8fe2ac, #8ac0f9);
+  border:3.5px solid transparent;
+  background-image: linear-gradient(to right, #74d69e, #8fe2ac, #8ac0f9);
+}
 
+
+/* WorkCard CSS */
 .job1 {
   left: calc(-70vw);
   background: linear-gradient(to right, #74d69e, #8fe2ac, #8ac0f9);
