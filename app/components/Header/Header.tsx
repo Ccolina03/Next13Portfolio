@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import CCIcon from '../../../public/cc.xlarge.png'
 import SideBarIcon from "../shared/SideBarIcon";
@@ -8,11 +9,52 @@ import {MdWork} from 'react-icons/md'
 import {BiSolidHappyAlt} from 'react-icons/bi'
 import {DiCodeigniter} from 'react-icons/di'
 import {FaLaptopCode} from 'react-icons/fa'
+import * as React from 'react'
+import '../../globals.css'
+
+const getBackground = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
+    switch (screenSize) {
+      case 'md':
+          return `background`
+      case 'lg':
+          return `background`
+      case 'xl':
+        return `background`
+      case 'sm':
+      case 'xs':
+      default:
+        return `backgroundMobile`;
+    }
+  };
+
 
 const Header = () => {
+  const [screenSize, setScreenSize] = React.useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('lg');
+  const backgroundDefault = getBackground(screenSize);
+  React.useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 1280) {
+        setScreenSize('xl');
+      } else if (screenWidth >= 1024) {
+        setScreenSize('lg');
+      } else if (screenWidth >= 768) {
+        setScreenSize('md');
+      } else if (screenWidth >= 640) {
+        setScreenSize('sm');
+      } else {
+        setScreenSize('xs');
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
     return (
         <header className="w-full mx-auto relative overflow-visible s">
-            <div className="background h-96 w-full">
+            <div className={`${backgroundDefault} h-96 w-full`}>
             <div className="gap-x-8 flex-row flex">
                 <div className="my-auto mx-2">
                     <Image src={CCIcon} alt="Carlos Colina Icon" height={40} width={50}/>
