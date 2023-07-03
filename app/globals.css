@@ -35,6 +35,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Carlos CSS */
+.carlos {
+    right: calc(30vw - 220px);
+    width: 30vw;
+
+}
+
 /* Card CSS */
 .border-gradient {
   border-radius: 10px;

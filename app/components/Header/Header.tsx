@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CCIcon from '../../../public/cc.xlarge.png'
 import SideBarIcon from "../shared/SideBarIcon";
+import Carlos from "../../../public/Screenshot_20230125_115845.png"
 import {AiOutlineGithub} from 'react-icons/ai'
 import { BsLinkedin } from "react-icons/bs";
 import {MdWork} from 'react-icons/md'
@@ -11,7 +12,7 @@ import {FaLaptopCode} from 'react-icons/fa'
 const Header = () => {
     return (
         <header className="w-full mx-auto">
-            <div className="relative gap-x-8 flex-row flex">
+            <div className="relative overflow-visible gap-x-8 flex-row flex">
                 <div className="my-auto mx-2">
                     <Image src={CCIcon} alt="Carlos Colina Icon" height={40} width={50}/>
                 </div>
@@ -26,13 +27,13 @@ const Header = () => {
                     <a className="my-auto "><SideBarIcon icon={<BsLinkedin size = "40"/>}/></a>
                 </div>
             </div>
-            <div className="flex text-white">
+            <div className="carlos flex text-white">
                 <div className="flex-col">
                     <div className="nombre">nombre</div>
                     <div className="subtitulo1">sub1</div>
                 </div>
-                <div className="flex">
-                    <Image/>
+                <div className="flex items-end absolute carlos">
+                    <Image className="rounded-xl" src={Carlos} alt="Carlitos Colina" width={250} height={210}/>
                 </div>
             </div>
             <div className="text-white">
