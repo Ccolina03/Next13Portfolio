@@ -58,9 +58,7 @@ const getHamburger = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
     if (hamburgerCard === 'xs') {
         return(
             <header className="w-full gap-16 mx-auto">
-            <div className="gap-x-2 flex-row flex">
                 <HamburgerMenu/>
-            </div>
             <div className="lg:flex-row md:flex-row flex sm:flex-col xs:flex-col text-white xs:mt-20">
                  <HeaderBg/>
                   <Banner/>
