@@ -3,18 +3,18 @@ import ExperienceCard from './ExperiencesCard';
 import Heading from '../shared/Heading';
 const Experiences = () => {
     return (
-        <div className='flex flex-col gap-y-16 items-center md:items-center sm:items-end xs:items-end'>
+        <div id="work-experience1" className='flex flex-col gap-y-16 items-center md:items-center sm:items-end xs:items-end'>
             <Heading className="text-4xl self-center text-white" size='h1'>My Work Experience</Heading>
             <div className='experience-container flex justify-center'>
                 <div className='timeline w-28 bg-backgroundWork flex flex-col items-center'>
-                    <div className='line1 w-0.5 bg-gray-100 h-36'></div>
+                    <div className='line1 w-0.5 bg-gray-100 h-48'></div>
                     <ExperienceCard job='SWE Intern' company='Litespace'
                     bullet1='Built 10+ reusables components utilizing TypeScript and React into Storybook and integrated them into a Progressive Web App '
                     bullet2='Implemented Nest.js backend migration for domain-specific microservice architecture using RabbitMQ, Nest.js, AWS, MongoDB Atlas, Docker, and Kubernetes'/>
                     <div className='line1 w-0.5 bg-gray-100 h-96'></div>
                     <div className='circle1 flex items-center justify-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
-                    <ExperienceCard inverse={true} job='Digital Content QA' company='University of Alberta' bullet1='Performed Typescript conversion to 30+ components in Cascade that are lively implemented in more than 90000+ web pages'
-                    bullet2='Refactored old HTML and CSS code to more than 2000+ web pages and improved Accesibility and SEO' />
+                    <ExperienceCard inverse={true} job='Digital Content QA' company='University of Alberta' bullet1='Performed Typescript conversion to 30+ components that are lively implemented in more than 90000+ pages'
+                    bullet2='Refactored HTML and CSS code of more than 2000+ web pages, while improving Accesibility and SEO' />
                     </div>
                     <div className='line1 w-0.5 bg-gray-100 h-96'></div>
                     <div className='circle1 flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
