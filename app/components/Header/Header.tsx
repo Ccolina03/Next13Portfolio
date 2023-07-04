@@ -15,11 +15,6 @@ import Banner from "./Banner";
 import Carlos from "./Carlos";
 
 const Header = () => {
-  const [windowSize, setWindowSize] = useState({
-    width: typeof window !== 'undefined' ? window.innerWidth : 0,
-    height: typeof window !== 'undefined' ? window.innerHeight : 0,
-  });
-  
     return (
         <header className="w-full gap-16 mx-auto">
             <div className="gap-x-8 flex-row flex">
@@ -32,7 +27,7 @@ const Header = () => {
                     <a className="mx-6 my-auto"> <SideBarIcon icon={<FaLaptopCode size = "40"/>}/> </a>
                     <a className="mx-6 my-auto"> <SideBarIcon icon={<DiCodeigniter size = "40"/>}/> </a>
                 </div>
-                <div className="absolute gap-x-5 mt-1 flex lg:flex-row md:flex-row xl:flex-row xl:top-0 xl:right-5 lg:top-0 lg:right-5 md:top-0 md:right-5 xs:flex-col xs:top-[4.2rem] xs:right-[1.5rem]">
+                <div className="absolute gap-x-5 mt-1 flex lg:flex-row md:flex-row xl:flex-row xl:top-0 xl:right-15 lg:top-0 lg:right-15 md:top-0 md:right-5 xs:flex-col xs:top-[4.2rem] xs:right-[1.5rem] sm:top-0 sm:right-5 sm:flex-row">
                     <a className="my-auto"> <SideBarIcon icon={<AiOutlineGithub size = "40"/>}/></a>
                     <a className="my-auto "><SideBarIcon icon={<BsLinkedin size = "40"/>}/></a>
                 </div>
