@@ -35,10 +35,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Banner */
+
 /* Carlos CSS */
 .carlos {
-    right: calc(25vw - 25vw);
-    width: 25vw;
+    right: calc(35vw - 35vw);
+    width: 35vw;
 }
 
 @media (min-width: 768px) { /* md breakpoint */
