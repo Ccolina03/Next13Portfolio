@@ -16,7 +16,7 @@ const Experiences = () => {
                     <ExperienceCard inverse={true} job='Digital Content QA' company='University of Alberta' bullet1='Performed Typescript conversion to 30+ components that are lively implemented in more than 90000+ pages'
                     bullet2='Refactored HTML and CSS code of more than 2000+ web pages, while improving Accesibility and SEO' />
                     </div>
-                    <div className='line1 w-0.5 bg-gray-100 h-96 xs:h-40rem]'></div>
+                    <div className='line1 w-0.5 bg-gray-100 h-96 xs:h-[40rem]'></div>
                     <div className='circle1 flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
                     <ExperienceCard job='Project Developer' company='UofA Blueprint' bullet1='Worked on front-end development with a team of 6 for a non-profit organization using TypeScript, React Native, and Git, following Agile workflow.' bullet2='Revamped app features to precisely align with Figma design' />
                     </div>

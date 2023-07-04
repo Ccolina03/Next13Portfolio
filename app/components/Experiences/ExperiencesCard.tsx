@@ -63,7 +63,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
      <Image src={UAlberta} alt='Icon' />
-      <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[550px] sm:h-[390px] md:h-[520px]`}>
+      <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
         <Heading className="text-white font-extrabold" size="h3">
           {job}
         </Heading>
