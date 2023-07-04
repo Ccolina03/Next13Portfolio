@@ -5,8 +5,8 @@
 @layer components {
 
     .sidebar-icon {
-        @apply relative flex items-center justify-center xl:static xl:flex xl:top-0 xl:mr-2 xl:my-auto
-        h-12 w-12 mt-2 mb-2 mx-auto bg-backgroundWork text-green
+        @apply relative flex items-center justify-around xl:static xl:flex xl:top-0 xl:mr-2 xl:my-auto
+        h-12 w-12 mt-2 mb-2 bg-backgroundWork text-green
         hover:bg-gray-400 hover:text-green hover:rounded-xl transition-all duration-300 ease-linear
     }
 
