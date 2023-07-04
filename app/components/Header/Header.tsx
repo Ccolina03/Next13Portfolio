@@ -1,5 +1,5 @@
 "use client"
-import React, {useState, useEffect, FC} from 'react'
+import React, {useState, useEffect, FC, useCallback} from 'react'
 import Image from "next/image";
 import CCIcon from '../../../public/cc.xlarge.png'
 import SideBarIcon from "../shared/SideBarIcon";
@@ -28,30 +28,32 @@ const getHamburger = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
     }
   };
 
-const Header: FC = () => {
-    const [screenSize, setScreenSize] = React.useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('lg');
-    const hamburgerCard = getHamburger(screenSize);
-    React.useEffect(() => {
-      const handleResize = () => {
-        const screenWidth = window.innerWidth;
-        if (screenWidth >= 1280) {
-          setScreenSize('xl');
-        } else if (screenWidth >= 1024) {
-          setScreenSize('lg');
-        } else if (screenWidth >= 768) {
-          setScreenSize('md');
-        } else if (screenWidth >= 640) {
-          setScreenSize('sm');
-        } else {
-          setScreenSize('xs');
-        }
-      };
+  const Header: FC = () => {
+    const [screenSize, setScreenSize] = useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('xs');
   
+    const getHamburger = useCallback((screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
+      if (screenSize === 'xs') {
+        return 'xs';
+      }
+      return 'sm';
+    }, []);
+  
+    const handleResize = useCallback(() => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth >= 640) {
+        setScreenSize('sm');
+      } else {
+        setScreenSize('xs');
+      }
+    }, []);
+  
+    useEffect(() => {
       handleResize();
-  
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, [handleResize]);
+  
+    const hamburgerCard = getHamburger(screenSize);
 
     if (hamburgerCard === 'xs') {
         return(
