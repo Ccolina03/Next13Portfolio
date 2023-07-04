@@ -33,9 +33,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   inverse,
   job = 'Dream Job',
   company = 'Shopify',
-  bullet1 = 'Improving backend scaling employing Golang and Javaaggggggf',
-  bullet2 = 'Front-end tasksfdsssssssssssssssssssssssssss',
-  bullet3 = 'front-end more tasks to dofsdaaaaaaaaaaaaa',
+  bullet1,
+  bullet2,
+  bullet3,
 }) => {
   const [screenSize, setScreenSize] = React.useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('lg');
   const inverseCard = getInverse(inverse || false, screenSize);
@@ -71,9 +71,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           {company}
         </Heading>
         <ul className="mt-6 text-white list-disc text-lg xl:text-xl leading-9">
-          <li>{bullet1}</li>
-          <li>{bullet2}</li>
-          <li>{bullet3}</li>
+          {bullet1 ? <li>{bullet1}</li>: <></>}  
+          {bullet2 ? <li>{bullet2}</li>: <></>}  
+          {bullet3 ? <li>{bullet3}</li>: <></>}  
         </ul>
       </div>
     </div>

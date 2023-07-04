@@ -8,14 +8,17 @@ const Experiences = () => {
             <div className='experience-container flex justify-center'>
                 <div className='timeline w-28 bg-backgroundWork flex flex-col items-center'>
                     <div className='line1 w-0.5 bg-gray-100 h-36'></div>
-                    <ExperienceCard job='SWE Intern' company='Litespace' bullet1='Front-end development' />
+                    <ExperienceCard job='SWE Intern' company='Litespace'
+                    bullet1='Built 10+ reusables components utilizing TypeScript and React into Storybook and integrated them into a Progressive Web App '
+                    bullet2='Implemented Nest.js backend migration for domain-specific microservice architecture using RabbitMQ, Nest.js, AWS, MongoDB Atlas, Docker, and Kubernetes'/>
                     <div className='line1 w-0.5 bg-gray-100 h-96'></div>
                     <div className='circle1 flex items-center justify-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
-                    <ExperienceCard inverse={true} job='SWE Intern' company='Litespace' bullet1='Front-end development' />
+                    <ExperienceCard inverse={true} job='Digital Content QA' company='University of Alberta' bullet1='Performed Typescript conversion to 30+ components in Cascade that are lively implemented in more than 90000+ web pages'
+                    bullet2='Refactored old HTML and CSS code to more than 2000+ web pages and improved Accesibility and SEO' />
                     </div>
                     <div className='line1 w-0.5 bg-gray-100 h-96'></div>
                     <div className='circle1 flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
-                    <ExperienceCard job='SWE Intern' company='Litespace' bullet1='Front-end development' />
+                    <ExperienceCard job='Project Developer' company='UofA Blueprint' bullet1='Worked on front-end development with a team of 6 for a non-profit organization using TypeScript, React Native, and Git, following Agile workflow.' bullet2='Revamped app features to precisely align with Figma design' />
                     </div>
                     <div className='line1 w-0.5 bg-gray-100 h-36'></div>
                 </div> 
