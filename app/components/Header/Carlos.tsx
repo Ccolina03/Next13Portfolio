@@ -33,7 +33,7 @@ const Carlos: FC<CarlosProps> = (
             <button
                     type="button"
                     onClick={()=>{}}
-                    className="sm:w-[50vw] lg:w-[33vw] xl:w-[23vw] p-0.5 bg-gradient-to-r from-blueOne via-blueTwo to-blueThree rounded-3xl"
+                    className="xs:w-[70vw] sm:w-[50vw] lg:w-[33vw] xl:w-[23vw] p-0.5 bg-gradient-to-r from-blueOne via-blueTwo to-blueThree rounded-3xl"
                   >
                     <div className="py-0 px-6 gap-1 bg-[#0E202D] rounded-3xl flex items-center justify-center">
                       <Highlight className="text-xl">Contact me</Highlight>
