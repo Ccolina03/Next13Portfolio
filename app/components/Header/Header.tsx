@@ -1,5 +1,5 @@
-'use client'
-import React, {useState, useEffect} from 'react'
+"use client"
+import React, {useState, useEffect, FC} from 'react'
 import Image from "next/image";
 import CCIcon from '../../../public/cc.xlarge.png'
 import SideBarIcon from "../shared/SideBarIcon";
@@ -13,8 +13,60 @@ import '../../globals.css'
 import HeaderBg from "./HeaderBg";
 import Banner from "./Banner";
 import Carlos from "./Carlos";
+import HamburgerMenu from './HamburgerMenu';
 
-const Header = () => {
+const getHamburger = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
+    switch (screenSize) {
+      case 'xs': 
+            return 'xs'
+      case 'lg':
+      case 'xl':
+      case 'sm':
+      case 'xs':
+      default:
+        return 'sm';
+    }
+  };
+
+const Header: FC = () => {
+    const [screenSize, setScreenSize] = React.useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('lg');
+    const hamburgerCard = getHamburger(screenSize);
+    React.useEffect(() => {
+      const handleResize = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 1280) {
+          setScreenSize('xl');
+        } else if (screenWidth >= 1024) {
+          setScreenSize('lg');
+        } else if (screenWidth >= 768) {
+          setScreenSize('md');
+        } else if (screenWidth >= 640) {
+          setScreenSize('sm');
+        } else {
+          setScreenSize('xs');
+        }
+      };
+  
+      handleResize();
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    if (hamburgerCard === 'xs') {
+        return(
+            <header className="w-full gap-16 mx-auto">
+            <div className="gap-x-2 flex-row flex">
+                <HamburgerMenu/>
+            </div>
+            <div className="lg:flex-row md:flex-row flex sm:flex-col xs:flex-col text-white xs:mt-20">
+                 <HeaderBg/>
+                  <Banner/>
+                  <Carlos noShowSm={true}/>
+            </div>
+            </header>
+        ) 
+    } else {
     return (
         <header className="w-full gap-16 mx-auto">
             <div className="gap-x-8 flex-row flex">
@@ -40,6 +92,7 @@ const Header = () => {
             </div>
         </header>
     )
+    }
 }
 
 export default Header;

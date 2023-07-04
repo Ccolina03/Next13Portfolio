@@ -146,5 +146,12 @@ clip-path: polygon(1px 93.2736px, 1px 93.2736px, 1.00161569px 87.0353671px, 1.01
 }
 
 
+/* XS screen size */
+
+.xs\:block {
+  display: block;
+}
+
+
 
 
