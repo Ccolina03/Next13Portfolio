@@ -29,6 +29,21 @@ const getInverse = (inverse: boolean, screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'x
   }
 };
 
+const getDatePosition = (inverse: boolean, screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => { 
+  switch (screenSize) {
+    case 'md':
+        return inverse ? 'dateLeft md:w-[28vw] md:right-[20vw] lg:right-[20vw] xl:left-[20vw]' : 'dateRight md:w-[28vw] lg:w-[20vw] lg:left-[20vw] xl:right-[20vw]'
+    case 'lg':
+        return inverse ? 'dateLeft' : 'dateRight lg:left-[24vw] xl:right-[-20vw]'
+    case 'xl':
+      return inverse ? 'dateLeft' : 'dateRight';
+    case 'sm':
+    case 'xs':
+    default:
+      return inverse ? 'dateUnder w-[50vw] left-[-50vw]  xs:left-[-68vw] xs:top-[100vw] xs:w-[60vw]' : 'dateUnder w-[50vw] left-[-50vw] xs:left-[-68vw] xs:top-[100vw] xs:w-[60vw]';
+  }
+}
+
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
   inverse,
   job = 'Dream Job',
@@ -39,6 +54,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 }) => {
   const [screenSize, setScreenSize] = React.useState<'xs' | 'sm' | 'md' | 'lg' | 'xl'>('lg');
   const inverseCard = getInverse(inverse || false, screenSize);
+  const datePosition = getDatePosition(inverse || false, screenSize);
   React.useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
@@ -62,9 +78,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   }, []);
   return (
     <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
+     <div className={`${datePosition} absolute `}>
+          <p className='flex text-2xl text-white font-bold xl:text-3xl'>May 2023 - Present</p>
+      </div>
      <Image src={UAlberta} alt='Icon' />
       <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
-        <Heading className="text-white font-extrabold" size="h3">
+        <Heading className="text-white font-extrabold xl:text-3xl" size="h3">
           {job}
         </Heading>
         <Heading className="mt-3 text-[#905EFF] font-extrabold" size="h5">

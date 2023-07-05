@@ -88,6 +88,28 @@ clip-path: polygon(1px 93.2736px, 1px 93.2736px, 1.00161569px 87.0353671px, 1.01
 }
 
 
+/* Dates Positioning */
+
+.dateLeft {
+  right: calc(20vw);
+  width: 20vw;
+  z-index: 200;
+  
+}
+
+.dateRight {
+  left: calc(20vw);
+  width: 20vw;
+  z-index: 200;
+}
+
+.dateUnder {
+  top: calc(35vw);
+  width:40vw;
+  z-index:200;
+
+}
+
 /* WorkCard CSS */
 .job1 {
   left: calc(-70vw);

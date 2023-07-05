@@ -13,7 +13,7 @@ const Experiences = () => {
                     bullet2='Implemented Nest.js backend migration for domain-specific microservice architecture using RabbitMQ, AWS, Docker, and Kubernetes'/>
                     <div className='line1 w-0.5 bg-gray-100 xl:h-96 h-96 xs:h-[39rem] md:h-72 sm:h-96' ></div>
                     <div className='circle1 flex items-center justify-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
-                    <ExperienceCard inverse={true} job='Digital Content QA' company='University of Alberta' bullet1='Performed Typescript conversion to 30+ components that are lively implemented in more than 90000+ pages'
+                    <ExperienceCard inverse={true} job='Digital Content QA' company='University of Alberta' bullet1='Still adding things.'
                     bullet2='Refactored HTML and CSS code of more than 2000+ web pages, while improving Accesibility and SEO' />
                     </div>
                     <div className='line1 w-0.5 bg-gray-100 h-96 xl:h-96 xs:h-[39rem] md:h-72 sm:h-96'></div>
