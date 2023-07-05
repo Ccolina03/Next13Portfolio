@@ -76,27 +76,53 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  return (
-    <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
-     <div className={`${datePosition} absolute `}>
-          <p className='flex text-2xl text-white font-bold xl:text-3xl'>May 2023 - Present</p>
-      </div>
-     <Image src={UAlberta} alt='Icon' />
-      <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
-        <Heading className="text-white font-extrabold xl:text-3xl" size="h3">
-          {job}
-        </Heading>
-        <Heading className="mt-3 text-[#905EFF] font-extrabold" size="h5">
-          {company}
-        </Heading>
-        <ul className="mt-6 text-white list-disc sm:text-md text-md xl:text-xl leading-9">
-          {bullet1 ? <li>{bullet1}</li>: <></>}  
-          {bullet2 ? <li>{bullet2}</li>: <></>}  
-          {bullet3 ? <li>{bullet3}</li>: <></>}  
-        </ul>
-      </div>
-    </div>
-  );
+ 
+    if (screenSize == 'xs' || screenSize == "sm") {
+      return (
+        <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
+         <div className={`${datePosition} absolute bottom-0 right-0`}>
+              
+          </div>
+         <Image src={UAlberta} alt='Icon' />
+          <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
+            <Heading className="text-white font-extrabold text-3xl xl:text-3xl" size="h3">
+              {job}
+            </Heading>
+            <Heading className="mt-3 text-[#905EFF] font-extrabold" size="h5">
+              {company}
+            </Heading>
+            <ul className="mt-6 text-white list-disc sm:text-md text-md xl:text-xl leading-9">
+              {bullet1 ? <li>{bullet1}</li>: <></>}  
+              {bullet2 ? <li>{bullet2}</li>: <></>}  
+              {bullet3 ? <li>{bullet3}</li>: <></>}  
+            </ul>
+            <p className='xs:left-[20%] xs:bottom-3 xs:absolute sm:left-[8%] sm:bottom-3 sm:absolute sm:text-2xl sm:font-medium mt-2 text-1xl text-green font-semibold'>May 2023 - Present</p>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
+         <div className={`${datePosition} absolute `}>
+              <p className='flex text-2xl text-white font-bold xl:text-3xl'>May 2023 - Present</p>
+          </div>
+         <Image src={UAlberta} alt='Icon' />
+          <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
+            <Heading className="text-white font-extrabold xl:text-3xl" size="h3">
+              {job}
+            </Heading>
+            <Heading className="mt-3 text-[#905EFF] font-extrabold" size="h5">
+              {company}
+            </Heading>
+            <ul className="mt-6 text-white list-disc text-md xl:text-xl leading-9">
+              {bullet1 ? <li>{bullet1}</li>: <></>}  
+              {bullet2 ? <li>{bullet2}</li>: <></>}  
+              {bullet3 ? <li>{bullet3}</li>: <></>}  
+            </ul>
+          </div>
+        </div>
+      );
+    }
 };
 
 export default ExperienceCard;
