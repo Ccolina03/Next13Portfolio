@@ -9,6 +9,7 @@ export interface ExperienceCardProps {
   inverse?: boolean;
   job: string;
   company: string;
+  date: string;
   bullet1: string;
   bullet2?: string;
   bullet3?: string;
@@ -48,6 +49,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   inverse,
   job = 'Dream Job',
   company = 'Shopify',
+  date = '',
   bullet1,
   bullet2,
   bullet3,
@@ -81,7 +83,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       return (
         <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
          <div className={`${datePosition} absolute bottom-0 right-0`}>
-              
           </div>
          <Image src={UAlberta} alt='Icon' />
           <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
@@ -96,7 +97,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
               {bullet2 ? <li>{bullet2}</li>: <></>}  
               {bullet3 ? <li>{bullet3}</li>: <></>}  
             </ul>
-            <p className='xs:left-[20%] xs:bottom-3 xs:absolute sm:left-[8%] sm:bottom-3 sm:absolute sm:text-2xl sm:font-medium mt-2 text-1xl text-green font-semibold'>May 2023 - Present</p>
+            <p className='xs:left-[20%] xs:bottom-3 xs:absolute sm:left-[8%] sm:bottom-3 sm:absolute sm:text-2xl sm:font-medium mt-2 text-1xl text-green font-semibold'>{date}</p>
           </div>
         </div>
       );
@@ -104,7 +105,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       return (
         <div className="circle1 relative overflow-visible flex justify-center items-center rounded-full border-2 border-white h-28 w-full hover:bg-green">
          <div className={`${datePosition} absolute `}>
-              <p className='flex text-2xl text-white font-bold xl:text-3xl'>May 2023 - Present</p>
+              <p className='flex text-2xl text-white font-bold xl:text-3xl'>{date}</p>
           </div>
          <Image src={UAlberta} alt='Icon' />
           <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
