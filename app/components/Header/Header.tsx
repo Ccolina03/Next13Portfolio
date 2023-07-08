@@ -70,9 +70,6 @@ const getHamburger = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
     return (
         <header className="w-full gap-16 mx-auto">
             <div className="gap-x-8 flex-row flex">
-                <div className="my-auto mx-2">
-                    <Image src={CCIcon} alt="Carlos Colina Icon" height={30} width={40} />
-                </div>
                 <div className="flex mt-1 text-white lg:mt-2 xl:mt-3">
                     <a href='#Carlos' className="mx-4 my-auto"> <SideBarIcon icon={<BiSolidHappyAlt size = "40"/>}/> </a>
                     <a href="#work-experience1" className="mx-6 my-auto"><SideBarIcon icon={<MdWork size = "40"/>}/></a>

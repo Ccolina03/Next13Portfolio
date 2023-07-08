@@ -10,7 +10,7 @@ export interface ExperienceCardProps {
   job: string;
   company: string;
   date: string;
-  bullet1: string;
+  bullet1?: string;
   bullet2?: string;
   bullet3?: string;
 }
@@ -33,9 +33,9 @@ const getInverse = (inverse: boolean, screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'x
 const getDatePosition = (inverse: boolean, screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => { 
   switch (screenSize) {
     case 'md':
-        return inverse ? 'dateLeft md:w-[28vw] md:right-[20vw] lg:right-[20vw] xl:left-[20vw]' : 'dateRight md:w-[28vw] lg:w-[20vw] lg:left-[20vw] xl:right-[20vw]'
+        return inverse ? 'dateLeft left-[-29vw]  ' : 'dateRight'
     case 'lg':
-        return inverse ? 'dateLeft' : 'dateRight lg:left-[24vw] xl:right-[-20vw]'
+        return inverse ? 'dateLeft' : 'dateRight'
     case 'xl':
       return inverse ? 'dateLeft' : 'dateRight';
     case 'sm':

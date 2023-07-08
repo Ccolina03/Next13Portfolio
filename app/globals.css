@@ -91,15 +91,15 @@ clip-path: polygon(1px 93.2736px, 1px 93.2736px, 1.00161569px 87.0353671px, 1.01
 /* Dates Positioning */
 
 .dateLeft {
-  right: calc(20vw);
-  width: 20vw;
+  right: calc(1vw);
+  width: 33vw;
   z-index: 200;
   
 }
 
 .dateRight {
-  left: calc(20vw);
-  width: 20vw;
+  left: calc(15vw);
+  width: 33vw;
   z-index: 200;
 }
 
