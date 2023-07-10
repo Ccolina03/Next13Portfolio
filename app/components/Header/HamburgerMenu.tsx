@@ -45,7 +45,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = () => {
       {isMenuOpen && (
         <div ref={menuRef} className="bg-backgroundWork absolute top-0 right-0 flex flex-row-reverse">
           <a href='https://www.linkedin.com/in/ccolina03/' className="xs:mx-2 mx-4 my-auto"> <SideBarIcon icon={<BsLinkedin size = "40"/>}/> </a>
-          <a href='#Carlos' className="xs:mx-2 mx-4 my-auto"> <SideBarIcon icon={<AiOutlineGithub size = "40"/>}/> </a>
+          <a href='https://github.com/Ccolina03' className="xs:mx-2 mx-4 my-auto"> <SideBarIcon icon={<AiOutlineGithub size = "40"/>}/> </a>
           <a href='#Carlos' className="xs:mr-10 mx-4 my-auto"> <SideBarIcon icon={<BiSolidHappyAlt size = "40"/>}/> </a>
           <a href="#work-experience1" className="xs:mx-2 my-auto"><SideBarIcon icon={<MdWork size = "40"/>}/></a>
           <a href="#projects" className="xs:mx-2 mx-4 my-auto"> <SideBarIcon icon={<FaLaptopCode size = "40"/>}/> </a>

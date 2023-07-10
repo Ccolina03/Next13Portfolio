@@ -77,8 +77,8 @@ const getHamburger = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
                     <a className="mx-6 my-auto"> <SideBarIcon icon={<DiCodeigniter size = "40"/>}/> </a>
                 </div>
                 <div className="absolute gap-x-5 mt-1 flex lg:flex-row md:flex-row xl:flex-row xl:top-0 xl:right-15 lg:top-0 lg:right-15 md:top-0 md:right-5 xs:flex-col xs:top-[4.2rem] xs:right-[1.5rem] sm:top-0 sm:right-5 sm:flex-row lg:mt-2 xl:mt-3">
-                    <a className="my-auto"> <SideBarIcon icon={<AiOutlineGithub size = "40"/>}/></a>
-                    <a className="my-auto "><SideBarIcon icon={<BsLinkedin size = "40"/>}/></a>
+                    <a href='https://github.com/Ccolina03' className="my-auto"> <SideBarIcon icon={<AiOutlineGithub size = "40"/>}/></a>
+                    <a href='https://www.linkedin.com/in/ccolina03/' className="my-auto "><SideBarIcon icon={<BsLinkedin size = "40"/>}/></a>
                 </div>
             </div>
             
