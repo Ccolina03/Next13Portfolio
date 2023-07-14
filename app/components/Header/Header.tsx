@@ -83,7 +83,7 @@ const getHamburger = (screenSize: 'xs' | 'sm' | 'md' | 'lg' | 'xl'): string => {
             </div>
             
             <div className="lg:flex-row md:flex-row flex sm:flex-col xs:flex-col text-white lg:mt-16 xl:mt-16">
-                 <HeaderBg/>
+                  <HeaderBg/>
                   <Banner/>
                   <Carlos noShowSm={true}/>
             </div>

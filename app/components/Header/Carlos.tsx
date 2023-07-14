@@ -35,10 +35,12 @@ const Carlos: FC<CarlosProps> = (
                     onClick={()=>{}}
                     className="xs:w-[70vw] sm:w-[50vw] lg:w-[33vw] xl:w-[23vw] p-0.5  hover:bg-gray-400  bg-gradient-to-r from-blueOne via-blueTwo to-blueThree rounded-3xl"
                   >
+                    <a href='mailto:cmcolina@ualberta.ca' target='_blank'>
                     <div className="py-0 px-6 gap-1 bg-[#0E202D] rounded-3xl flex items-center justify-center">
                       <Highlight className="text-xl">Contact me</Highlight>
-                      <a className=""> <SideBarIcon contact={true} icon={<AiOutlineContacts size = "40"/>}/></a>
+                      <div className=""> <SideBarIcon contact={true} icon={<AiOutlineContacts size = "40"/>}/></div>
                     </div>
+                    </a>
                   </button>
         </div>
     )

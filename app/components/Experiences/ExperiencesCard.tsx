@@ -86,7 +86,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           </div>
          <Image src={UAlberta} alt='Icon' />
           <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
-            <Heading className="text-white font-extrabold text-3xl xl:text-3xl" size="h3">
+            <Heading Name="text-white font-extrabold text-3xl xl:text-3xl" size="h3">
               {job}
             </Heading>
             <Heading className="mt-3 text-[#905EFF] font-extrabold" size="h5">
