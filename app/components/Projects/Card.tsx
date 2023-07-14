@@ -34,7 +34,7 @@ const Card:FC<CardProps> = ({
                     </div>
                     <div className='flex flex-row  gap-y-2 gap-x-4 items-center'>
                     <SideBarIcon className="rounded-lg"icon={<BsYoutube size = "40"/>}/>
-                    <SideBarIcon className="rounded-lg"icon={<DiGithubAlt size = "40"/>}/>
+                    <a href={hrefGH}><div><SideBarIcon className="rounded-lg"icon={<DiGithubAlt size = "40"/>}/></div></a>
                     </div>
 
                 </div>
