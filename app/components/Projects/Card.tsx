@@ -33,7 +33,7 @@ const Card:FC<CardProps> = ({
                         <p>{subtitle}</p>
                     </div>
                     <div className='flex flex-row  gap-y-2 gap-x-4 items-center'>
-                    <SideBarIcon className="rounded-lg"icon={<BsYoutube size = "40"/>}/>
+                    <a href={hrefYT}><div><SideBarIcon className="rounded-lg"icon={<BsYoutube size = "40"/>}/></div></a>
                     <a href={hrefGH}><div><SideBarIcon className="rounded-lg"icon={<DiGithubAlt size = "40"/>}/></div></a>
                     </div>
 
