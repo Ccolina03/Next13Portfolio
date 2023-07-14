@@ -16,7 +16,7 @@ const Projects = () => {
             <Card picture={BajaBaja} title='BajaBaja (React-Node.js-MongoDB-Express)' subtitle="Lima's true/false informal bus stops tracker" hrefGH='https://github.com/Ccolina03/BajaBajaBackEnd_v1'/>
             <Card picture={Go} title='SinFin (React-Golang-AWS CDK)' subtitle="Future PWA Idea" hrefGH='https://github.com/Ccolina03'/>
             <Card picture={SnakeGame} title='Snake Game (Python)' subtitle="Snake Game we all know ;)" hrefGH='https://github.com/Ccolina03/snakegame1'/>
-            <Card picture={Challenge} title='Challenge (Redux-JavaScript)' subtitle="Redux app integrated with API + Search filter" hrefGH='https://github.com/Ccolina03/carlos_colina_launchpad-react-code-challenge'/>
+            <Card picture={Challenge} title='Challenge (Redux-JavaScript)' subtitle="Redux app integrated with API + Search filter" hrefGH='https://github.com/Ccolina03/carlos_colina_launchpad-react-code-challenge'hrefYT='https://youtu.be/-xbvDp44gTY'/>
             
             <Card picture={SubeSube} title='SubeSube (HTML-CSS-Bootstrap)' subtitle="We all have to start somewhere ;)" hrefGH='https://github.com/Ccolina03/subesube' hrefYT='https://youtu.be/Xl8l5XntZXY'/>
             <Card picture={Fasterin}title='Fasterin (Next.js-TypeScript)' subtitle="Old portfolio website" hrefGH='https://github.com/Ccolina03/fasterin'/>
