@@ -107,7 +107,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
          <div className={`${datePosition} absolute `}>
               <p className='flex text-2xl text-white font-bold xl:text-3xl'>{date}</p>
           </div>
-         <Image src={UAlberta} alt='Icon' />
+         <Image src={UAlberta} alt='Icon UofA' />
           <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
             <Heading className="text-white font-extrabold xl:text-3xl" size="h3">
               {job}
