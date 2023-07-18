@@ -47,9 +47,9 @@ const getDatePosition = (inverse: boolean, screenSize: 'xs' | 'sm' | 'md' | 'lg'
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
   inverse,
-  job = 'Dream Job',
-  company = 'Shopify',
-  date = '',
+  job,
+  company,
+  date,
   bullet1,
   bullet2,
   bullet3,
