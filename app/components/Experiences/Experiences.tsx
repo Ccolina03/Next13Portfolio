@@ -4,7 +4,7 @@ import Heading from '../shared/Heading';
 const Experiences = () => {
     return (
         <div id="work-experience1" className='flex flex-col gap-y-16 items-center md:items-center sm:items-end xs:items-end'>
-            <Heading className="text-4xl self-center text-white" size='h1'>My Work Experience</Heading>
+            <Heading className="text-4xl self-center text-white sm:mb-0 lg:mb-1 md:mb-1 xs:mb-8" size='h1'>My Work Experience</Heading>
             <div className='experience-container flex justify-center'>
                 <div className='timeline w-28 bg-backgroundWork flex flex-col items-center'>
                     <div className='line1 w-0.5 bg-gray-100 h-[12rem]'></div>
