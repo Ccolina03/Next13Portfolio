@@ -12,11 +12,11 @@ export interface CarlosProps {
 const getCarlos = (noShowSm: Pick<CarlosProps, 'noShowSm' >['noShowSm']):string => {
     switch (noShowSm) {
         case true:
-            return 'flex-shrink-0 w-50 h-80 items-center m-2 xs:mt-6'
+            return 'flex-shrink-0 w-50 h-80 items-center m-4 xs:mt-6'
         case false:
-            return 'lg:flex-shrink '
+            return 'lg:flex-shrink'
         default:
-            return 'flex-shrink-0 w-50 h-80 items-center m-2 xs:mt-6'
+            return 'flex-shrink-0 w-50 h-80 items-center m-4 xs:mt-6'
     }
 
 }
