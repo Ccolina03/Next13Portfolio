@@ -85,7 +85,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
          <div className={`${datePosition} absolute bottom-0 right-0`}>
           </div>
          <Image src={UAlberta} alt='Icon' />
-          <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[475px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
+          <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[350px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
             <Heading className="text-white font-extrabold text-3xl xl:text-3xl" size="h3">
               {job}
             </Heading>
@@ -108,7 +108,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
               <p className='flex text-2xl text-white font-bold xl:text-3xl'>{date}</p>
           </div>
          <Image src={UAlberta} alt='Icon UofA' />
-          <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[375px] xl:h-[350px] xs:h-[600px] sm:h-[390px] md:h-[520px]`}>
+          <div className={`${inverseCard} px-10 py-8 absolute rounded-[25px] lg:h-[475px] xl:h-[350px] xs:h-[600px] sm:h-[475px] md:h-[520px]`}>
             <Heading className="text-white font-extrabold xl:text-3xl" size="h3">
               {job}
             </Heading>
