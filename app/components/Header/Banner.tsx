@@ -8,7 +8,7 @@ const Banner = () => {
           Hello 👋 I am <br /> <Highlight>Carlos Colina</Highlight>
         </h1>
         <div className="text-2xl">
-          Computer Engineering Coop student currently interning at Litespace as SWE Intern and University of Alberta
+          Computer Engineering Coop student currently interning at Ovintiv (Encana) as a Software Developer Intern.
         </div>
       </div>
     </div>
