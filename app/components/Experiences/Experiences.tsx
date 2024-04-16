@@ -10,8 +10,7 @@ const Experiences = () => {
                     <div className='line1 w-0.5 bg-gray-100 h-[12rem]'></div>
                      <ExperienceCard job='SDE Intern' company='Ovintiv (Encana)' date='Jan 2024 - Present'
                     bullet1='Developed activity dashboards with React.js, TypeScript, Zustand and React Query to expedite land processes'
-                    bullet2='Implemented FastAPI endpoints to perform automated processes using Redis and Celery tasks'
-                    bullet3='Developed prototype to synchronize computed spatial data between PostgreSQL and ElasticSearch, enabling side-by-side views and automated updates in dashboards'/>
+                    bullet2='Developed prototype and features to synchronize computed spatial data between PostgreSQL and ElasticSearch, enabling side-by-side views and automated updates with FastAPI, Redis and Celery in dashboards'/>
                     <div className='line1 w-0.5 bg-gray-100 xl:h-96 h-96 xs:h-[39rem] md:h-72 lg:h-72 sm:h-96' ></div>
                     <div className='circle1 flex items-center justify-center rounded-full border-2 border-white h-28 w-full hover:bg-green'>
                          <ExperienceCard inverse={true} job='SWE Intern' company='Litespace' date='May - August 2023'
