@@ -14,7 +14,7 @@ const Projects = () => {
     <div id="projects" className='projects-container gap-16 flex flex-col'>
         <Heading className="text-4xl self-center text-white" size='h1'>My Projects</Heading>
         <div className='grid sm:grid-cols-1 md:grid-cols-2'>
-            <a href='https://uprint-i-ccolina03.vercel.app/' target="_blank" rel="noopener">
+            <a href='https://uprint-i.vercel.app/' target="_blank" rel="noopener">
             <Card picture={UPrintI} title='UPrintI (Next.js-GraphQL-TailwindCSS)' subtitle="Mom's Online Toy Store" hrefGH='https://github.com/Ccolina03/UprintI' hrefYT='https://www.youtube.com/watch?v=TVz4vjbxoVA'/>
             </a>
             <a href='https://github.com/Ccolina03/TaskKeepr' target="_blank" rel="noopener">
