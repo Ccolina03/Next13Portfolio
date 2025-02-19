@@ -7,6 +7,7 @@ import Go from '../../../public/goo.png'
 import SubeSube from '../../../public/subesube.png'
 import UPrintI from '../../../public/UprintI.png'
 import Challenge from '../../../public/Challenge.png'
+import LivesBusVolume from '../../../public/LiveBusVolume.png'
 import TaskKeepr from '../../../public/Screenshot 2023-09-21 232335.png'
 
 const Projects = () => {
