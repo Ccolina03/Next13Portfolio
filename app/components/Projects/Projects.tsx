@@ -15,6 +15,9 @@ const Projects = () => {
         <Heading className="text-4xl self-center text-white" size='h1'>My Projects</Heading>
         <div className='grid sm:grid-cols-1 md:grid-cols-2'>
             <a href='https://uprint-i.vercel.app/' target="_blank" rel="noopener">
+            <Card picture={LiveBusVolume} title='Live Ridership Bus' subtitle="Track real-time analytics like bus ridership" hrefGH='https://github.com/Ccolina03/LiveBusVolume/tree/main' hrefYT='https://youtu.be/CI5sKFSr3U4'/>
+            </a>
+            <a href='https://uprint-i.vercel.app/' target="_blank" rel="noopener">
             <Card picture={UPrintI} title='UPrintI (Next.js-GraphQL-TailwindCSS)' subtitle="Mom's Online Toy Store" hrefGH='https://github.com/Ccolina03/UprintI' hrefYT='https://www.youtube.com/watch?v=TVz4vjbxoVA'/>
             </a>
             <a href='https://github.com/Ccolina03/TaskKeepr' target="_blank" rel="noopener">
