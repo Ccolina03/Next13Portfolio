@@ -8,7 +8,7 @@ const Banner = () => {
           Hello 👋 I am <br /> <Highlight>Carlos Colina</Highlight>
         </h1>
         <div className="text-2xl">
-          Computer Engineering Coop student: Incoming SWE Intern @ Confluent | Prev @Ovintiv and @Litespace
+          Computer Engineering Coop student: Incoming SWE Intern @ Confluent | Prev @ Ovintiv and @Litespace
         </div>
       </div>
     </div>
